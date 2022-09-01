@@ -1,0 +1,26 @@
+import java.util.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+        int l, b,area,pari;
+        l = sc.nextInt();
+        b = sc.nextInt();
+        area = l * b;
+        pari = 2 * (l + b);
+        
+        if (pari > area) {
+            System.out.println("Peri"+"\n"+pari);
+        }
+        if (pari < area) {
+            System.out.println("Area"+"\n"+area);
+        }
+        if(pari == area){
+            System.out.println("Eq");
+            System.out.println(pari);
+        }
+	}
+}
